@@ -1,0 +1,124 @@
+\documentclass[spanish,a4paper,11pt]{article}
+
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[dvips]{epsfig}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%123456789012345678901234567890123456789012345678901234567890123456789
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Format
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\topmargin -21 mm
+%\headheight 10 mm
+%\headsep 10 mm
+\textheight 256 mm
+\oddsidemargin -5.4 mm
+\evensidemargin -5.4 mm
+\textwidth 17 cm
+%\columnsep 10 mm
+%\pagestyle{empty}
+%\input{amssym.def}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\thispagestyle{empty}
+\begin{document}
+
+\begin{tabular}{lccr}
+%%%%
+  \begin{tabular}{c}
+   \epsfig{file=img/ullesc.eps,width=3.5cm} \\
+   \tiny{E.S. Ingeniería y Tecnología} \\
+   \tiny{Ingeniería Informática} \\
+   \tiny{Lenguajes y Sistemas Informáticos}
+  \end{tabular}                      &\hspace{1cm} &\hspace{1cm} &
+%%%%
+  \begin{tabular}{c}
+  \large{\textbf{Lenguajes y Paradigmas de Programación}} \\
+    Práctica de laboratorio \textbf{*bono*} 
+  \end{tabular}        
+%%%%
+\end{tabular}
+
+\bigskip
+
+\begin{itemize}
+\item
+El objetivo de este trabajo es elaborar el enunciado de una práctica de laboratorio
+en la que se haga patente la diferencia entre las fusiones (\textit{merge}) y 
+las reorganizaciones (\textit{rebase}) del sistema de control de versiones \textit{Git}.
+
+\item
+Se ha de considerar un proyecto con una rama maestra (\textit{master}), 
+una rama \texttt{experimento} y una rama \texttt{sub-experimento}.
+Se han de listar los comandos para ponerlo en marcha.
+%
+En primer lugar se ha de pedir que se realice un ejemplo de fusión (\textit{merge}) 
+y que se listen qué confirmaciones (\textit{commits}) hay en cada rama después de la misma.
+%
+En segundo lugar se ha de pedir que se realice un ejemplo de reorganización (\textit{rebase})
+y que se listen qué confirmaciones (\textit{commits}).
+%
+Además, se tiene que mostrar un ejemplo de lo que ocurre cuando se hace una reorganización
+con una rama que se ha hecho pública.
+
+
+\item
+El enunciado de la práctica de laboratorio ha de contener los pasos detallados a seguir, por ejemplo:
+
+
+\begin{enumerate}
+\item
+ Iniciar una sesión de trabajo en GNU-Linux.
+
+\item
+ Abrir una terminal.
+
+\item
+ Situarse en la \textbf{Carpeta de Proyecto} de la asignatura
+ Lenguajes y Paradigmas de Programación, esto es, en el directorio \textit{LPP}.
+
+ Uno de los miembros del equipo ha de actuar como \textbf{Coordinador del Equipo de Trabajo}.
+
+ El \textbf{Nombre del Equipo de Trabajo} será: \textsc{LPP}{\_i}
+ donde $i$  puede tomar los valores en el rango 1..60, dependiendo del equipo elegido en la consulta.
+
+\item
+El coordinador creará la estructura del `directorio de trabajo del equipo'.
+%
+Transformará el directorio de trabajo local en un `repositorio git'.
+%
+Creará un `repositorio en \textit{github}' con el nombre del equipo.
+%
+Dará permisos de escritura en el repositorio de `\textit{github}' a todos los miembros del equipo y a los profesores de prácticas.
+%
+Creará los ficheros `\verb|.gitignore|' y `\verb|readme.md|'.
+
+\item
+Los miembro del equipo `clonarán' el repositorio de \textit{github}.
+%
+Todos los miembros del equipo, realizarán al menos una confirmación y la incorporarán al repositorio compartido.
+
+... ... ... ... ... ... 
+
+\item
+ Cerrar la sesión.
+
+\end{enumerate}
+
+
+\item
+Este trabajo se realizará en equipos de un máximo de tres personas.
+
+\item
+El enunciado de la práctica de laboratorio se ha de elaborar utilizando \LaTeX{} y 
+ha de ser un proyecto \textit{Git}.
+
+\item
+El resultado del trabajo se tiene que presentar en el
+\textbf{I Congreso de Estudiantes de Ingeniería Informática}
+de la \textsc{ull}, cuyo plazo de presentación de resúmenes es el \textbf{3 de noviembre}.
+
+\end{itemize}
+
+\end{document}
